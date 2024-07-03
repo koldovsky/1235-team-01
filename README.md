@@ -22,4 +22,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 });
 ```
 #Team
-Basishyn Marta-Diana
+Basishyn Marta-Diana, Fastovets Artem
