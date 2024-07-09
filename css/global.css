@@ -7,6 +7,12 @@
 }
 
 :root{
+    --text-color: #fff;
+    --accent-color: #d78c43;
     scroll-behavior: smooth;
     font-family: "Manrope", sans-serif;
+}
+img{
+    width: 100%;
+    display: block;
 }
