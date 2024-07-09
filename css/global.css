@@ -9,8 +9,14 @@
 :root{
     --text-color: #fff;
     --accent-color: #d78c43;
+    --body-background-color: #0d0d0d;
     scroll-behavior: smooth;
     font-family: "Manrope", sans-serif;
+}
+body{
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+    font-size: 16px;
 }
 img{
     width: 100%;
