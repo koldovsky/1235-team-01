@@ -22,3 +22,9 @@ img{
     width: 100%;
     display: block;
 }
+h2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 10px;
+    color: #d78c43; 
+}
