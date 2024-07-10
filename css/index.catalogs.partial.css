@@ -4,6 +4,10 @@
     padding-bottom: 90px;
     padding-left: 20px;
     padding-right: 20px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(---text-color);
+
 }
 
 .catalogs__title {
@@ -11,6 +15,7 @@
     font-style: normal;
     font-size: 10px;
     color: var(--accent-color); 
+    text-transform: uppercase;
  }
 
  .catalogs__description{
@@ -42,6 +47,12 @@
    font-size: 22px;
  }
 
+ .collections-carousel__track{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+ }
+
  .collections-carousel__collection{
    color: var(--light-accent-color);
    font-size: 10px;
@@ -50,4 +61,20 @@
  .collections-carousel__year{
    color: var(--secondary-text-color);
    font-size: 14px;
+ }
+
+ .catalogs__pdf-icon{
+  display: inline;
+  fill: var(--light-accent-color);
+ }
+
+ .catalogs_link-download{
+  display: inline;
+  color: var(--text-color);
+  text-transform: uppercase;
+
+ }
+
+ .catalogs__our-store-button{
+  color: var(--text-color);
  }
