@@ -1,0 +1,5 @@
+.button {
+    background-color: var(--accent-color);
+    display:inline-block;
+    color: var(--text-color);
+}
