@@ -1,5 +1,6 @@
 .button {
-    background-color: var(--accent-color);
-    display:inline-block;
-    color: var(--text-color);
+  background-color: var(--accent-color);
+  display: inline-block;
+  color: var(--text-color);
+  padding: 10px;
 }
