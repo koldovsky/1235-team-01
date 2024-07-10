@@ -1,3 +1,24 @@
 .get-quote {
-  background: url("img/backgrounds/get-quote.png") 50% 50% / cover no-repeat, rgb(13, 13, 13);
+  background: url("/img/backgrounds/get-quote.png") 50% 50% / cover no-repeat,
+    var(--body-background-color);
+    min-width: 320px;
+    position: relative;
+    line-height: var(--text-line-height);
+    font-family: var(--text-font-weight);
+}
+.get-quote__phone {
+  font-style:bold;
+  color: var(--light-accent-color);
+}
+.get-quote__email {
+  font-style:bold;
+  color: var(--light-accent-color);
+}
+.get-quote__inner {
+  max-width: 1200px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.get-quote__link {
+  color: var(--text-color);
 }

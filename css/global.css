@@ -9,9 +9,13 @@
 :root{
     --text-color: #fff;
     --accent-color: #d78c43;
+    --light-accent-color: #f1d1af;
     --body-background-color: #0d0d0d;
     scroll-behavior: smooth;
     font-family: "Manrope", sans-serif;
+    --text-font-weight: 400;
+    --text-line-height: 1.53;
+    
 }
 body{
     background-color: var(--body-background-color);
@@ -23,8 +27,6 @@ img{
     display: block;
 }
 h2 {
-    font-family: 'Manrope';
-    font-style: normal;
     font-size: 10px;
-    color: #d78c43; 
+    color: var(--accent-color); 
 }
