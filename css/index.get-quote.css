@@ -1,6 +1,7 @@
 .get-quote {
-  background: url("/img/backgrounds/get-quote.png") 50% 50% / cover no-repeat,
-    var(--body-background-color);
+  background-image: url("../img/backgrounds/get-quote.png");
+  background-size: cover;
+  background-position: 50% 50%;
     min-width: 320px;
     position: relative;
     line-height: var(--text-line-height);
