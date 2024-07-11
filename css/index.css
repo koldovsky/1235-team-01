@@ -1,6 +1,6 @@
 @import "global.css";
-@import "index.catalogs.partial.css";
 @import "global.header-nav.css";
 @import "index.header-hero.css";
 @import "index.get-quote.css";
+@import "index.catalogs.partial.css";
 @import "controls.css";
