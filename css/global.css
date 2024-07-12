@@ -19,6 +19,7 @@
   font-family: "Manrope", sans-serif;
   --text-font-weight: 400;
   --text-line-height: 1.53;
+  --gray-text-color:rgb(187, 187, 187);
 }
 body {
   background-color: var(--body-background-color);
