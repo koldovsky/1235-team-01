@@ -2,11 +2,10 @@
   background-image: url("../img/backgrounds/get-quote.png");
   background-size: cover;
   background-position: 50% 50%;
-  min-width: 320px;
   position: relative;
   line-height: var(--text-line-height);
   font-family: var(--text-font-weight);
-  padding: 15px;
+
 }
 .get-quote__subtitle {
   margin-top: 20px;
@@ -29,7 +28,37 @@
   color: var(--light-accent-color);
 }
 .get-quote__inner {
-  max-width: 1200px;
+  min-width: 100%;
   padding-top: 90px;
   padding-bottom: 90px;
+  padding-left: var(--content-gutter-320);
+  padding-right: var(--content-gutter-320);
+}
+
+@media (min-width: 480px) {
+  .get-quote__inner {
+    --w-content-gutter: var(--content-gutter-480);
+  }
+}
+
+@media (min-width: 768px) {
+  .get-quote__inner {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    --content-gutter: var(--content-gutter-768);
+  }
+}
+
+@media (min-width: 992px) {
+  .get-quote__inner {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    --content-gutter: var(--content-gutter-992);
+  }
+}
+
+@media (min-width: 1280px) {
+  .get-quote__inner {
+    --w-content-gutter: var(--content-gutter-1200);
+  }
 }
