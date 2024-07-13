@@ -44,7 +44,6 @@
   padding-right: var(--content-gutter);
 }
 
-
 @media (max-width: 479px) {
   .get-quote__inner {
     --content-gutter: var(--content-gutter-320);
@@ -66,7 +65,7 @@
   .get-quote {
     display: flex;
   }
-  
+
   .box {
     width: 50%;
   }
@@ -88,6 +87,6 @@
 
 @media (min-width: 1200px) {
   .get-quote {
-margin: auto;
+    margin: auto;
   }
 }
