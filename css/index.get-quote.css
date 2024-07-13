@@ -5,6 +5,7 @@
   position: relative;
   line-height: var(--text-line-height);
   font-weight: var(--text-font-weight);
+  max-width: 1200px;
 }
 
 .get-quote__description {
@@ -37,7 +38,6 @@
 }
 
 .get-quote__inner {
-  /* min-width: 100%; */
   padding-top: 90px;
   padding-bottom: 90px;
   padding-left: var(--content-gutter);
@@ -83,5 +83,11 @@
 @media (min-width: 1280px) {
   .get-quote__inner {
     --content-gutter: var(--content-gutter-1280);
+  }
+}
+
+@media (min-width: 1200px) {
+  .get-quote {
+margin: auto;
   }
 }
