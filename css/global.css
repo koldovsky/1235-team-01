@@ -23,6 +23,7 @@
   --content-gutter-768: 32px;
   --content-gutter-992: 40px;
   --content-gutter-1280: 15px;
+  --basic-margin: 1.5rem;
   --gray-text-color: rgb(187, 187, 187);
   scroll-behavior: smooth;
   font-family: "Manrope", sans-serif;
