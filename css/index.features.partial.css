@@ -1,23 +1,15 @@
-:root {
-  --basic-margin: 1.5rem;
-}
-
 .features {
-  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
 
-.features__image-container {
-  width: 100%;
-}
-
+.features__image-container,
 .features__content {
   width: 100%;
 }
 
 .features__image {
-  height: 14rem;
+  height: 14.8rem;
   object-fit: cover;
   margin-bottom: 2em;
 }
@@ -29,7 +21,9 @@
 }
 
 .features__heading,
-.features__subheading {
+.features__subheading,
+.features__description-link,
+.features__link {
   font-weight: bold;
 }
 
@@ -37,7 +31,8 @@
 .features__subheading,
 .features__description-title,
 .features__description,
-.features__list, .features__description-link {
+.features__list,
+.features__description-link {
   margin-bottom: var(--basic-margin);
 }
 
@@ -65,9 +60,30 @@
 
 .features__list {
   font-size: 0.875rem;
-  padding-left: 1.875rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .features__list-item {
-  list-style: url(/img/features/done-checkmark.svg);
+  margin-bottom: 1.4rem;
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.875rem;
+}
+
+.features__list-item::before {
+  content: "";
+  background-image: url(../img/features/done-checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.features__description-link {
+  color: var(--light-accent-color);
 }

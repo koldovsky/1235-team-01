@@ -16,26 +16,30 @@
   --light-accent-color: #f1d1af;
   --body-background-color: #0d0d0d;
   --secondary-background-color: #252527;
-  scroll-behavior: smooth;
-  font-family: "Manrope", sans-serif;
-  --text-font-weight: 400;
-  --text-line-height: 1.53;
+  --text-font-weight: 600;
+  --text-line-height: 1.2;
   --content-gutter-320: 24px;
   --content-gutter-480: 24px;
   --content-gutter-768: 32px;
   --content-gutter-992: 40px;
   --content-gutter-1280: 15px;
-  --gray-text-color:rgb(187, 187, 187);
+  --basic-margin: 1.5rem;
+  --gray-text-color: rgb(187, 187, 187);
+  scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
 }
+
 body {
   background-color: var(--body-background-color);
   color: var(--text-color);
   font-size: 16px;
 }
+
 img {
   width: 100%;
   display: block;
 }
+
 h2 {
   font-size: 10px;
   color: var(--accent-color);
@@ -57,7 +61,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .section-heading {
     font-size: 51px;
   }
@@ -66,7 +70,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .section-heading {
     font-size: 62px;
   }

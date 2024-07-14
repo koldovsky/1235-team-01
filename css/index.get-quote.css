@@ -4,40 +4,56 @@
   background-position: 50% 50%;
   position: relative;
   line-height: var(--text-line-height);
-  font-family: var(--text-font-weight);
+  font-weight: var(--text-font-weight);
+  max-width: 1200px;
+}
 
-}
-.get-quote__subtitle {
-  margin-top: 20px;
-}
 .get-quote__description {
+  color: rgb(225, 225, 225);
+  font-size: 19px;
   margin-top: 25px;
 }
+
 .get-quote__contact {
+  font-weight: 400;
   margin-top: 25px;
 }
+
+.get-quote__text {
+  color: rgb(187, 187, 187);
+}
+
 .get-quote__cta {
   margin-top: 25px;
 }
+
 .get-quote__phone {
   font-style: bold;
   color: var(--light-accent-color);
 }
+
 .get-quote__email {
   font-style: bold;
   color: var(--light-accent-color);
 }
+
 .get-quote__inner {
-  min-width: 100%;
   padding-top: 90px;
   padding-bottom: 90px;
-  padding-left: var(--content-gutter-320);
-  padding-right: var(--content-gutter-320);
+  padding-left: var(--content-gutter);
+  padding-right: var(--content-gutter);
+}
+
+
+@media (max-width: 479px) {
+  .get-quote__inner {
+    --content-gutter: var(--content-gutter-320);
+  }
 }
 
 @media (min-width: 480px) {
   .get-quote__inner {
-    --w-content-gutter: var(--content-gutter-480);
+    --content-gutter: var(--content-gutter-480);
   }
 }
 
@@ -46,6 +62,13 @@
     padding-top: 115px;
     padding-bottom: 115px;
     --content-gutter: var(--content-gutter-768);
+  }
+  .get-quote {
+    display: flex;
+  }
+  
+  .box {
+    width: 50%;
   }
 }
 
@@ -59,6 +82,12 @@
 
 @media (min-width: 1280px) {
   .get-quote__inner {
-    --w-content-gutter: var(--content-gutter-1200);
+    --content-gutter: var(--content-gutter-1280);
+  }
+}
+
+@media (min-width: 1200px) {
+  .get-quote {
+margin: auto;
   }
 }

@@ -1,0 +1,104 @@
+.contacts-hero {
+  background: linear-gradient(rgba(13, 13, 13, 0.87), rgba(13, 13, 13, 0.87)),
+    url("../img/backgrounds/contacts.hero.png");
+  background-size: cover;
+  background-position: 56.56% 82.89%;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.contacts-hero__title {
+  text-align: center;
+  color: var(--accent-color);
+  font-weight: var(--text-font-weight);
+  line-height: var(--text-line-height);
+}
+
+.contacts-hero__breadcrumb {
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: var(--text-line-height);
+  letter-spacing: calc(0.2 * 1em);
+  margin-top: 25px;
+}
+
+.contacts-hero__breadcrumb-item {
+  color: var(--secondary-text-color);
+}
+
+.contacts-form__checkbox {
+  width: 20px;
+  height: 24px;
+}
+
+.contacts-form {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: var(--content-gutter);
+  padding-right: var(--content-gutter);
+}
+
+.contacts-form__subtitle {
+  font-weight: 600;
+  margin-top:20px;
+}
+
+.contacts-form__description__one{
+  font-size: 19px;
+  margin-top:20px;
+  color:var(--accent-text-color);
+  font-weight: 500;
+}
+
+.contacts-form__description__two{
+  font-size: 16px;
+  margin-top:20px;
+  color: var(--text-color);
+  font-weight: 400;
+  filter: contrast();
+}
+
+.contacts-form__option-text {
+  color:var(--accent-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left:10px;
+  filter: contrast();
+  line-height:22.4px;
+}
+
+.contacts-form__options{
+  margin-top:20px
+}
+
+.contacts-form__option {
+  display: flex;
+  margin-bottom:16px;
+}
+
+@media (max-width: 479px) {
+  .contacts-form {
+    --content-gutter: var(--content-gutter-320);
+  }
+}
+
+@media (min-width: 480px) {
+  .contacts-form {
+    --content-gutter: var(--content-gutter-480);
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts-form {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    .contacts-form__text {
+      --content-gutter: var(--content-gutter-768);
+    }
+  }
+  .contacts-form {
+    display: flex;
+  }
+}
