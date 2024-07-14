@@ -1,5 +1,7 @@
 .header-nav {
     display: none;
+    list-style: none;
+    gap: 25px;
 }
 
 .header {
@@ -37,6 +39,16 @@
     height: 2px;
 }
 
+.header-nav_item a {
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    font-size: 15px;
+}
+@media (min-width: 767px) {
+    .header {
+        padding:  30px 32px;
+    }
+}
 @media(min-width: 991px) {
     .header-nav {
         display: flex;
@@ -45,4 +57,9 @@
     .burger {
         display: none;
     }
+
 }
+
+
+
+
