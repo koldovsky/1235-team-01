@@ -4,11 +4,13 @@
     gap: 25px;
 }
 
-.header {
-    padding: 30px 24px 30px 24px;
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header{
+    padding: 30px 24px 30px 24px;
 }
 
 .header-logo {
