@@ -9,7 +9,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.header{
+
+.header {
     padding: 30px 24px 30px 24px;
 }
 
@@ -46,11 +47,13 @@
     font-weight: 600;
     font-size: 15px;
 }
+
 @media (min-width: 767px) {
     .header {
-        padding:  30px 32px;
+        padding: 30px 32px;
     }
 }
+
 @media(min-width: 991px) {
     .header-nav {
         display: flex;
@@ -61,7 +64,3 @@
     }
 
 }
-
-
-
-

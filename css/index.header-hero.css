@@ -1,3 +1,10 @@
+.header-hero {
+    background-image: url(../img/home/first-background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%
+}
+
 .hero-experiece_link {
     color: var(--text-color);
     font-weight: 800;
@@ -40,7 +47,8 @@
     font-weight: bold;
     padding-top: 23px;
 }
-.hero-price_text span{
+
+.hero-price_text span {
     display: block;
 }
 
@@ -140,12 +148,17 @@ h1 {
 .text-color-golden {
     color: var(--light-accent-color);
 }
+
 @media(min-width: 767px) {
     .home-hero {
         display: flex;
         flex-direction: column;
-        padding:  80px 32px 80px 32px;
+        padding: 80px 32px 80px 32px;
 
+    }
+
+    .header-hero {
+        background-position: 67% 50%
     }
 
     .hero-wrapper_top {
@@ -169,50 +182,91 @@ h1 {
 
     .hero-experience img {
         object-position: right;
-        
+
     }
 
     .hero-experience {
         text-align: right;
     }
-    h1{
+
+    h1 {
         font-size: 66px;
         margin-top: 20px;
         font-weight: 600;
 
 
     }
-    .hero-heading{
+
+    .hero-heading {
         width: 50%;
     }
-    .hero-heading_button{
+
+    .hero-heading_button {
         margin-top: 35px;
 
     }
-    .hero-price_text{
+
+    .hero-price_text {
         padding-top: 20px;
         font-size: 24px;
     }
-    .hero-socials_arrow{
+
+    .hero-socials_arrow {
         margin-top: 38px;
     }
-    .hero-socials_text{
+
+    .hero-socials_text {
         margin-top: 50px;
     }
-    .hero-socials_request{
+
+    .hero-socials_request {
         margin-top: 20px;
     }
-    .hero-socials{
-        width: 33%;
+
+    .hero-socials {
+        width: 30%;
         margin-bottom: 0px;
     }
-   .hero-experience{
-    width: 25%;
-    padding-left: 30px;
-   }
-   .hero-experience img{
-    margin-left: auto;
-   }
 
+    .hero-experience {
+        width: 22%;
+        padding-left: 30px;
+    }
+
+    .hero-experience img {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 991px) {
+    h1 {
+        font-size: 76px;
+        font-weight: 600;
+    }
+
+    .header-hero {
+        background-position: 68% 50%
+    }
+
+    .hero-heading_button {
+        margin-top: 40px;
+    }
+
+    .hero-price_text {
+        font-size: 26px;
+
+    }
+
+    .hero-socials_text {
+        font-size: 15px;
+    }
+
+    .hero-socials_request {
+        font-size: 15px;
+    }
+
+    .hero-experiece_text {
+        font-size: 15px;
+    }
 
 }
