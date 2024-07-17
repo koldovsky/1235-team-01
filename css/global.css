@@ -25,7 +25,7 @@
   --content-gutter-768: 32px;
   --content-gutter-992: 40px;
   --content-gutter-1280: 15px;
-  --gray-text-color:rgb(187, 187, 187);
+  --gray-text-color: rgb(187, 187, 187);
 }
 body {
   background-color: var(--body-background-color);
