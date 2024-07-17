@@ -1,8 +1,11 @@
 @import "global.css";
+@import "controls.css";
 @import "global.header-nav.css";
 @import "index.header-hero.css";
 @import "index.about-us.partial.css";
-@import "index.get-quote.css";
-@import "controls.css";
 @import "index.features.partial.css";
+@import "index.get-quote.css";
 @import "index.catalogs.partial.css";
+@import "contacts.css";
+@import "index.projects.partial.css";
+@import "footer.css"
