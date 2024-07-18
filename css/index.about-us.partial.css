@@ -18,6 +18,7 @@
 .about-us__description {
   font-size: 19px;
   margin-top: 25px;
+  color:var(--accent-text-color);
 }
 .about-us__details {
   margin-top: 50px;
@@ -122,5 +123,31 @@
   }
   .stats__description{
     font-weight:400;
+  }
+}
+@media (min-width:991px){
+  .about-us{
+    padding: 120px 40px;
+  }
+  .about-us__header{
+    font-size: 62px;
+    line-height: 74.4px;
+  }
+  .about-us__description{
+    font-size:19px;
+    line-height: 26.03px;
+  }
+  .about-us__subtitle{
+    font-size: 36px;
+  }
+  .about-us__text{
+    font-size: 16px;
+  }
+  .stats__header{
+    font-size: 62px;
+    line-height: 74.4px;
+  }
+  .stats__description{
+    font-size: 16px;
   }
 }
