@@ -9,3 +9,9 @@ function stringToArray(string) {
 function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
 }
+
+//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+//Make two functions ( max and min), that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
+const min = list => Math.min(...list);
+
+const max = list => Math.max(...list);
