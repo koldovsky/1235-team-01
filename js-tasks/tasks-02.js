@@ -12,6 +12,17 @@ function DNAtoRNA(dna) {
 
 //https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 //Make two functions ( max and min), that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
-const min = list => Math.min(...list);
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
 
-const max = list => Math.max(...list);
+//https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+//Function that returns the smallest value of an array or the index of that value.
+function min(arr, toReturn) {
+  const minValue = Math.min(...arr);
+  switch (toReturn) {
+    case "value":
+      return minValue;
+    case "index":
+      return arr.indexOf(minValue);
+  }
+}
