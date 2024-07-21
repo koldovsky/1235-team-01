@@ -6,3 +6,30 @@ function combat(health, damage) {
   return healthLeft;
 }
 
+function lovefunc(flower1, flower2) {
+  return ((flower1 % 2) + (flower2 % 2)) % 2 != 0;
+}
+
+function litres(time) {
+  return Math.floor(time / 2);
+}
+
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
+
+function move(position, roll) {
+  return (position += roll * 2);
+}
+
+function makeNegative(num) {
+  if (num > 0) {
+    num = -num;
+  }
+  return num;
+}
+
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+
