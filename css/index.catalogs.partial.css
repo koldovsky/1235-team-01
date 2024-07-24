@@ -57,7 +57,7 @@
 @media screen and (min-width: 770px) {
   .catalogs__container {
     display: grid;
-    gap: 60px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -66,7 +66,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+ 
 }
+
 .catalogs__description {
   color: var(--accent-text-color);
 }
@@ -138,7 +140,8 @@
 }
 
 .collections-carousel__track-container {
-  display: inline-flex;
+  display: flex;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -148,7 +151,6 @@
 }
 
 .collections-carousel__slide {
-  min-width: 300px;
   margin: 0 15px;
   display: flex;
   flex-direction: column;
@@ -172,3 +174,4 @@
 .collections-carousel__year {
   margin: 2px 0;
 }
+
