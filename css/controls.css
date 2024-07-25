@@ -11,3 +11,12 @@
   color: black;
   background-color: var(--text-color);
 }
+
+.carrousel-arrow {
+  color: var(--accent-text-color);
+  cursor: pointer;
+}
+
+.carrousel-arrow:hover {
+  color: var(--text-color);
+}
