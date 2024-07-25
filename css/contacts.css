@@ -1,4 +1,5 @@
 @import "global.css";
+@import "global.header-nav.css";
 .contacts-hero {
   background: linear-gradient(rgba(13, 13, 13, 0.87), rgba(13, 13, 13, 0.87)),
     url("../img/backgrounds/contacts.hero.png");
@@ -83,6 +84,10 @@
 .contacts-form__option {
   display: flex;
   margin-bottom: 16px;
+}
+
+.box {
+  width: 60%;
 }
 
 @media (max-width: 479px) {
