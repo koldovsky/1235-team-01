@@ -1,3 +1,5 @@
+@import "global.css";
+@import "global.header-nav.css";
 .contacts-hero {
   background: linear-gradient(rgba(13, 13, 13, 0.87), rgba(13, 13, 13, 0.87)),
     url("../img/backgrounds/contacts.hero.png");
@@ -34,48 +36,58 @@
 }
 
 .contacts-form {
+  background: url("../img/backgrounds/contacts.text.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 63.13% 100%;
+  background-repeat: no-repeat;
   padding-top: 90px;
   padding-bottom: 90px;
   padding-left: var(--content-gutter);
   padding-right: var(--content-gutter);
+  max-width: 100%;
 }
 
 .contacts-form__subtitle {
   font-weight: 600;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
-.contacts-form__description__one{
+.contacts-form__description__one {
   font-size: 19px;
-  margin-top:20px;
-  color:var(--accent-text-color);
+  margin-top: 20px;
+  color: var(--accent-text-color);
   font-weight: 500;
 }
 
-.contacts-form__description__two{
+.contacts-form__description__two {
   font-size: 16px;
-  margin-top:20px;
+  margin-top: 20px;
   color: var(--text-color);
   font-weight: 400;
   filter: contrast();
 }
 
 .contacts-form__option-text {
-  color:var(--accent-text-color);
+  color: var(--accent-text-color);
   font-weight: 400;
   font-size: 14px;
-  margin-left:10px;
+  margin-left: 10px;
   filter: contrast();
-  line-height:22.4px;
+  line-height: 22.4px;
 }
 
-.contacts-form__options{
-  margin-top:20px
+.contacts-form__options {
+  margin-top: 20px;
 }
 
 .contacts-form__option {
   display: flex;
-  margin-bottom:16px;
+  margin-bottom: 16px;
+}
+
+.box {
+  width: 60%;
 }
 
 @media (max-width: 479px) {
@@ -94,11 +106,21 @@
   .contacts-form {
     padding-top: 115px;
     padding-bottom: 115px;
+    display: flex;
     .contacts-form__text {
       --content-gutter: var(--content-gutter-768);
     }
   }
+}
+
+@media (min-width: 1280px) {
+  .contacts-form__text {
+    --content-gutter: var(--content-gutter-1280);
+  }
+}
+
+@media (min-width: 1200px) {
   .contacts-form {
-    display: flex;
+    margin: auto;
   }
 }
