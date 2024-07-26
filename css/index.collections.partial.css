@@ -23,6 +23,10 @@
 
 }
 
+.collections__list{
+    margin: 7.5px;
+}
+
 .collections__header-text{
     font-size: 19px;
     font-weight: 500;
@@ -41,14 +45,13 @@
 .collections__item{
     box-sizing: border-box;
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
     font-size: 16px;
     font-weight: 400;
     margin-left: -7.5px;
     margin-right: -7.5px;
     margin-top: 20px;
     text-align: left;
+    flex-direction: row;
 }
 
 .collections__image{
@@ -61,8 +64,8 @@
 
 .collections__item-content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
 }
 
 .list__header{
