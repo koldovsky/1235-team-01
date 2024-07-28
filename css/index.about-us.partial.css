@@ -4,6 +4,7 @@
   background-size: 100%;
   padding: 90px 24px;
 }
+
 .about-us__title {
   font-size: 10px;
   font-weight: 800;
@@ -67,6 +68,17 @@
   display: flex;
   flex-direction: column;
   margin-top: 45px;
+}
+.about-us__clock{
+  color: var(--accent-color);
+  letter-spacing: 2px;
+}
+.stats__item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.stats__item:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
