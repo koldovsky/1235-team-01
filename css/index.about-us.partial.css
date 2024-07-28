@@ -1,5 +1,7 @@
 .about-us {
-  background-color: var(--secondary-background-color);
+  background-image: url("../img/backgrounds/about-us.svg");
+  background-position: 0% 80%;
+  background-size: 100%;
   padding: 90px 24px;
 }
 .about-us__title {

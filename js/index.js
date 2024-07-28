@@ -3,6 +3,7 @@ function init() {
     import('...js');
     */
     import('./catalogs.carousel.js');
+    import('./index.about-us-partial.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
