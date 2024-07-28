@@ -1,6 +1,7 @@
 function init() {
     import('./catalogs.carousel.js');
     import('./index.about-us-partial.js');
+    import('./global.header-nav.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
