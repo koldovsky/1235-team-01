@@ -1,7 +1,4 @@
 function init() {
-    /*
-    import('...js');
-    */
     import('./catalogs.carousel.js');
     import('./index.about-us-partial.js');
 }
