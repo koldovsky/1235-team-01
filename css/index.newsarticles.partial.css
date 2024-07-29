@@ -84,5 +84,5 @@
     left: 0px;
     line-height: 24.48px;
     right: 0;
-    text-align: left;
+    display: flex;
 }
