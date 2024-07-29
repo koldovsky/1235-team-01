@@ -14,9 +14,11 @@
 
 .articles__header{
     color: var(--text-color);
-    font-size: 51px;
+    font-size: 62px;
+    letter-spacing: normal;
+    font-stretch: 100%;
     font-weight: 600;
-    line-height: 61.2px;
+    line-height: 74.4px;
     text-align: left;
 
 
@@ -26,6 +28,7 @@
     color: var(--accent-color);
     font-size: 10px;
     font-weight: 800;
+    font-stretch: 100%;
     letter-spacing: 2px;
     line-height: 15.4px;
     text-align: left;
@@ -38,21 +41,48 @@
     font-weight: 500;
     letter-spacing: normal;
     line-height: 26.03px;
-    
+    text-align: left;
 }
 
 .articles__publication-date{
+    color: var(--light-accent-color);
+    font-size: 10px;
+    font-stretch: 100%;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 15.4px;
+    text-align: left;
 
 }
 
 .articles__second-subheader{
-
+    color: var(--text-color);
+    font-size: 26px;
+    font-stretch: 100%;
+    font-weight: 600;
+    line-height: 36.4px;
+    text-align: left;
 }
 
 .articles__second-subheader-description{
-
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    line-height: 24.48px;
+    text-align: left;
 }
 
 .articles__image{
-
+    border-image-repeat: stretch;
+    border-image-width: 1;
+    border-top-right-radius: 300px;
+    border-top-left-radius: 0px;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    left: 0px;
+    line-height: 24.48px;
+    right: 0;
+    text-align: left;
 }
