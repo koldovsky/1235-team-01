@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 const clock = document.querySelector(".about-us__clock");
 const animatedText = document.querySelector(".about-us__header");
 
@@ -8,10 +9,16 @@ setInterval(updateClock, 1000);
 
 gsap.to(animatedText, {
   scale: 1.1,
-  duration: 1.5,
+  duration: 1,
   ease: "power1.inOut",
-  repeat: -1,
+  repeat: 3,
   yoyo: true,
+  scrollTrigger: {
+    trigger: animatedText,
+    start: "top 80%", 
+    end: "bottom 20%",
+    toggleActions: "restart none none none",
+  },
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,6 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
   statsItems.forEach((item, index) => {
     setTimeout(() => {
       item.classList.add("visible");
-    }, index * 200); // Затримка між анімаціями кожного елемента
+    }, index * 200);
   });
 });
