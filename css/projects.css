@@ -371,7 +371,7 @@ h2 {
 
 .projects__column--first {
   flex-basis: 20%; /* Пропорційна ширина для першого стовпця */
-  margin-right: 50px; /* Відстань між першим і другим стовпцем */
+  margin-right: 20px; /* Відстань між першим і другим стовпцем */
 }
 
 .projects__column--second {
@@ -385,13 +385,13 @@ h2 {
 }
 
 .projects__column--fourth {
-  flex-basis: 50%; /* Пропорційна ширина для другого стовпця */
+  flex-basis: 30%; /* Пропорційна ширина для другого стовпця */
   margin-right: 20px; /* Відстань між другим і третім стовпцем */
-  margin-left: 40px;
 }
 
 .projects__column--fifth {
   flex-basis: 30%;
+  margin-right: 20px;
 }
 
 .projects__title {
@@ -424,34 +424,33 @@ h2 {
   color: #ffffff;
 }
 
-.project__image-container {
-  width: 100%;
-  height: 300px; /* Фіксована висота для контейнера зображення */
-  overflow: hidden;
-}
-
 .project__image {
-  width: 100%;
   height: 100%;
-  object-fit: cover; /* Забезпечує відповідне обрізання зображення */
 }
 
 @media (max-width: 768px) {
   .projects__row {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .projects__column {
-      margin-right: 0;
-      margin-bottom: 20px; /* Відступи між стовпчиками */
+    margin-right: 0;
+    margin-bottom: 20px; /* Відступи між стовпчиками */
   }
 
   .projects__column--first,
   .projects__column--second,
-  .projects__column--third
+  .projects__column--third,
   .projects__column--fourth,
   .projects__column--fifth {
-      flex-basis: auto;
-      text-align: left; /* Вирівнюємо текст і стрілку по лівому краю */
+    flex-basis: auto;
+    text-align: left; /* Вирівнюємо текст і стрілку по лівому краю */
   }
+}
+
+.transparent-line {
+  width: 80%;
+  height: 1px;
+  background-color: rgba(241, 209, 175, 0.5);
+  margin: 20px 10%;
 }
