@@ -22,7 +22,7 @@
 .articles__text, .articles__image-wrapper {
     flex: 1;
     max-width: 50%;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box; 
 }
 
 .articles__text {
@@ -104,10 +104,10 @@
 }
 
 .newsarticles a {
-    color: #ffffff; /* White color for anchor text */
+    color: #ffffff; 
 }
 
 .newsarticles a:hover {
-    color: #ffffff; /* Optional: lighter color on hover for better UX */
-    text-decoration: underline; /* Optional: underline on hover to indicate interactivity */
+    color: #ffffff; 
+    text-decoration: underline; 
 }
