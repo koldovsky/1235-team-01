@@ -6,6 +6,7 @@
     min-width: 320px;
     background-size: cover;
     background-position: center right;
+    color: #ffffff;
 
 }
 
@@ -13,18 +14,31 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .articles__text {
     flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
     margin-right: 20px;
 }
 
-.articles__image{
-    max-width: 50%;
-    height: auto;
-    border-top-right-radius: 300px;
-    border-top-left-radius: 0px;
+.articles__text-wrapper {
+    /*max-width: 49%;*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.articles__subheader{
+    color: var(--accent-color);
+    font-size: 10px;
+    font-weight: 700; /* was 800*/
+    letter-spacing: 2px;
+    line-height: 15.4px;
+    /*text-align: left;*/
 }
 
 .articles__header{
@@ -32,16 +46,8 @@
     font-size: 62px;
     font-weight: 600;
     line-height: 74.4px;
-    text-align: left;
-}
-
-.articles__subheader{
-    color: var(--accent-color);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    line-height: 15.4px;
-    text-align: left;
+    margin-bottom: 20px;
+    /*text-align: left;*/
 }
 
 .articles__header-description{
@@ -49,17 +55,18 @@
     font-size: 19px;
     font-weight: 500;
     line-height: 26.03px;
-    text-align: left;
+    margin-bottom: 30px;
+    /*text-align: left;*/
 }
 
 .articles__publication-date{
     color: var(--light-accent-color);
     font-size: 10px;
     font-weight: 800;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     line-height: 15.4px;
-    text-align: left;
-
+    /*text-align: left;*/
 }
 
 .articles__second-subheader{
@@ -67,13 +74,40 @@
     font-size: 26px;
     font-weight: 600;
     line-height: 36.4px;
-    text-align: left;
+    margin-bottom: 10px;
+    /*text-align: left;*/
 }
 
 .articles__second-subheader-description{
     color: var(--secondary-text-color);
     font-size: 16px;
-    font-weight: 400;
+    /*font-weight: 400;*/
     line-height: 24.48px;
-    text-align: left;
+    margin-bottom: 20px;
+    /*text-align: left;*/
+}
+
+.articles__image-wrapper {
+    /*max-width: 49%;*/
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 50%;
+    box-sizing: border-box;
+    flex: 1;
+    
+}
+
+.articles__image{
+    /*max-width: 50%;*/
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 300px;
+    border-top-left-radius: 0px;
+    display: block;
+    
+}
+
+.articles__spacer {
+    height: 40px; /* або 75px в залежності від розміру */
+    background-color: transparent;
 }
