@@ -1,9 +1,9 @@
 const slides = [
-    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp1.png" width="218" height="300" alt="Aurora Lamp" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Aurora Lamp</p><p class="collections-carousel__collection">CLASSIC COLLECTION</p><p class="collections-carousel__year">2023</p></li>',
-    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp2.png" width="218" height="300" alt="Luminous Haven" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Luminous Haven</p><p class="collections-carousel__collection">WOODEN LIFE COLLECTION</p><p class="collections-carousel__year">2024</p></li>',
-    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp3.png" width="218" height="300" alt="Wooden Blocks" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Wooden Blocks</p><p class="collections-carousel__collection">WOODEN LIFE COLLECTION</p><p class="collections-carousel__year">2024</p></li>',
-    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp4.png" width="218" height="300" alt="Cake in the Ocean" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Cake in the Ocean</p><p class="collections-carousel__collection">CEILING FIXTURES</p><p class="collections-carousel__year">2022</p></li>',
-    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp5.png" width="218" height="300" alt="Arretia Lamp" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Arretia Lamp</p><p class="collections-carousel__collection">BEDSIDE LAMPS</p><p class="collections-carousel__year">2022</p></li>'
+    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp1.png" alt="Aurora Lamp" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Aurora Lamp</p><p class="collections-carousel__collection">CLASSIC COLLECTION</p><p class="collections-carousel__year">2023</p></li>',
+    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp2.png" alt="Luminous Haven" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Luminous Haven</p><p class="collections-carousel__collection">WOODEN LIFE COLLECTION</p><p class="collections-carousel__year">2024</p></li>',
+    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp3.png" alt="Wooden Blocks" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Wooden Blocks</p><p class="collections-carousel__collection">WOODEN LIFE COLLECTION</p><p class="collections-carousel__year">2024</p></li>',
+    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp4.png" alt="Cake in the Ocean" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Cake in the Ocean</p><p class="collections-carousel__collection">CEILING FIXTURES</p><p class="collections-carousel__year">2022</p></li>',
+    '<li class="collections-carousel__slide"><img src="img/catalogs/collections.lamp5.png" alt="Arretia Lamp" class="collections-carousel__image"/><p class="collections-carousel__name unit-heading">Arretia Lamp</p><p class="collections-carousel__collection">BEDSIDE LAMPS</p><p class="collections-carousel__year">2022</p></li>'
 ];
 
 let currentIdx = 0;
@@ -32,9 +32,6 @@ function prevSlide() {
     currentIdx = currentIdx - 1 < 0 ? slides.length - 1 : currentIdx - 1;
     renderSlide();
 }
-
-// Uncomment the line below if you want to automatically move to the next slide every 3 seconds
-// setInterval(nextSlide, 3000);
 
 renderSlide();
 

@@ -15,6 +15,7 @@
 .carrousel-arrow {
   color: var(--accent-text-color);
   cursor: pointer;
+  font-weight: 100;
 }
 
 .carrousel-arrow:hover {
