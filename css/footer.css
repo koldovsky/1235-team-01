@@ -1,4 +1,3 @@
-@media (min-width: 320px) {
   .footer__wrapper {
     padding: 80px 24px 17px 24px;
     display: flex;
@@ -91,7 +90,7 @@
 
   .footer__section-third {
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     color: var(--secondary-text-color);
     border: 1px solid black;
@@ -103,9 +102,22 @@
     .footer__location-icon,
     .footer__mail-icon,
     .footer__celly-icon {
+      position: relative;
       width: 20px;
       height: 24px;
       color: var(--accent-color);
+    }
+
+    .footer__location-icon {
+      right: 40px;
+    }
+
+    .footer__mail-icon {
+      right: 65px;
+    }
+
+    .footer__celly-icon {
+      right: 10px;
     }
 
     .footer-contacts {
@@ -139,5 +151,3 @@
     font-size: 14px;
     gap: 24px;
   }
-
-}
