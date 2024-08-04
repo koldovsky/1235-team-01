@@ -108,7 +108,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .newsarticles__block-wrapper {
         flex-direction: column; /* Зміна напрямку на колонку для мобільних екранів */
         align-items: center; /* Центрування елементів */
