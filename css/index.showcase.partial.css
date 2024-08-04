@@ -1,7 +1,6 @@
 .showcase-wrapper {
   width: 100%;
   padding: 1.6rem;
-
   background-color: var(--secondary-background-color);
 }
 
@@ -18,10 +17,8 @@
   width: 100%;
   height: 28.6rem;
   object-fit: cover;
-
   position: relative;
   z-index: 0;
-
   transition: ease 700ms;
 }
 
@@ -39,8 +36,7 @@
   height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-
-  transition: 700ms;
+  transition: ease 700ms;
 }
 
 .showcase__item:hover::after {
@@ -55,9 +51,7 @@
   position: absolute;
   top: 0;
   left: 0;
-
   transition: ease 700s;
-
   z-index: 3;
 }
 
@@ -74,6 +68,12 @@
 .showcase__item:hover .showcase__text {
   display: block;
   animation: goingUp 600ms ease 0ms forwards;
+}
+
+.showcase__text-heading::selection,
+.showcase__text-info::selection {
+  color: var(--body-background-color);
+  background-color: var(--text-color);
 }
 
 @keyframes goingUp {
