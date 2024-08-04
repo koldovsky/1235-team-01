@@ -7,6 +7,7 @@
     background-size: cover;
     background-position: center right;
     color: #ffffff;
+    box-sizing: border-box;
 
 }
 
@@ -17,6 +18,7 @@
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .articles__text-wrapper, .articles__image-wrapper {
@@ -27,16 +29,13 @@
     padding-right: 30px;
 }
 
-/*.articles__text {
-    margin-right: 20px;
-}*/
-
 .articles__subheader{
     color: var(--accent-color);
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 2px;
     line-height: 15.4px;
+    white-space: nowrap;
 }
 
 .articles__header{
@@ -95,16 +94,66 @@
     text-decoration: underline; 
 }
 
-/*.articles__image-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-}*/
-
 .articles__image{
     width: 100%;
     height: auto;
     border-top-right-radius: 300px;
     border-top-left-radius: 0px;
-    display: flex;
+    display: block;
 }
 
+@media (max-width: 1200px) {
+    .newsarticles__block-wrapper {
+        padding: 0 10px; /* Зменшення внутрішніх відступів на ширших екранах */
+    }
+}
+
+@media (max-width: 600px) {
+    .newsarticles__block-wrapper {
+        flex-direction: column; /* Зміна напрямку на колонку для мобільних екранів */
+        align-items: center; /* Центрування елементів */
+    }
+    
+    .articles__text-wrapper, .articles__image-wrapper {
+        max-width: 100%; /* Встановлення на повну ширину */
+        padding-left: 20px; /* Зменшення внутрішніх відступів */
+        padding-right: 20px;
+    }
+    
+    .articles__image-wrapper {
+        order: 2; /* Зміна порядку - картинка йде після тексту */
+    }
+    
+    .articles__text-wrapper {
+        order: 1; /* Текст перед картинкою */
+        text-align: left; /* Центрування тексту для мобільних */
+    }
+}
+@media (max-width: 320px) {
+    .articles__text-wrapper {
+        padding-left: 20px; /* Додатково зменшити відступи для найменших екранів */
+        padding-right: 20px;
+    }
+
+    .articles__subheader{
+        font-size: 10px;
+        line-height: 15.4px;
+        font-weight: 800;
+    }
+
+    .articles__header {
+        font-size: 40px; /* Опційно: зменшити заголовок для кращого вигляду на дуже малих екранах */
+        line-height: 48px;
+        font-weight: 600;
+    }
+    .articles__header-description{
+        font-size: 19px;
+        line-height: 26.03px;
+        font-weight: 500;
+    }
+    .articles__second-subheader{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30.8px;
+    }
+}
