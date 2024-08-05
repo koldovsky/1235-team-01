@@ -91,6 +91,11 @@
   object-fit: cover;
   object-position: center;
 }
+.collections__item-content:active {
+  transform: scale(1.15) translateY(-4px);
+  transition: transform 0.3s ease-in-out;
+}
+
 
 @media (min-width: 768px) {
   .collections {
