@@ -137,7 +137,14 @@
   }
 }
 
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
+
+  .collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .collections__header {
     font-size: 62px;
     line-height: 74.4px;
@@ -145,6 +152,33 @@
 
   .list__header{
     font-size: 26px;
-    
+  }
+}*/
+
+@media (min-width: 1024px) {
+  .collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 0% 100%;
+    background-attachment: fixed;
+  }
+
+  .collections__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+
+  .collections__text{
+    max-width: 570px;
+  }
+  .collections__background-image {
+    min-width: 512px;
+    max-width: 1280px;
+    height: 984px;
   }
 }
