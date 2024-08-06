@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+  }
+  :root {scroll-behavior: smooth;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Manrope", sans-serif}
+  img {display: block;}
+body {margin: 0; padding: 40px;
+    background-color: #0d0d0d;}
+  .headerservises {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    padding-right: 75px;
+  }
+  .headerservisestwo { display: flex;
+    flex-direction: column;
+    padding-top: 75px; padding-left: 100px;}
+.servises {color: #d78c2c; padding-top: 30px; }
+.discoverp {color: white; font-size: 49px; padding-top: 50px; flex: 1;}
+.lsolution {color: white; padding-bottom: 15px;}
+.ambientstuff {color: lightgray; padding-bottom: 15px;}
+.exploring {color: wheat;}
+.cfixtures {color: #d78c2c; font-size: 12px; flex: 1;}
+.fixtures {color: #a59a99; font-size: 12px; flex: 1;}
+.flamp {color: #d78c2c; font-size: 12px; flex: 1;}
+.flampl {color: #a59a99; font-size: 12px; flex: 1;}
+.wscones {color: #d78c2c; font-size: 12px; flex: 1;}
+.wsconesl {color: #a59a99; font-size: 12px; flex: 1;}
+.wmlights {color: #d78c2c; font-size: 12px; flex: 1;}
+.wmlightsl {color: #a59a99; font-size: 12px; flex: 1;}
+.kitchenil {color: #d78c2c; font-size: 12px; flex: 1;}
+.lkitchenil {color: #a59a99; font-size: 12px; flex: 1;}
+.modularlights {color: #d78c2c; font-size: 12px; flex: 1;}
+.modularlightsl {color: #a59a99; font-size: 12px; flex: 1;}
+.ledl {color: #d78c2c; font-size: 12px; flex: 1;}
+.ledll {color: #a59a99; font-size: 12px; flex: 1;}
+.smartlight {color: #d78c2c; font-size: 12px; flex: 1;}
+.smartlightl {color: #a59a99; font-size: 12px; flex: 1;}
+.list{display: grid;}
+ .servisesp {display: flex;
+flex-direction: column; font-size: 10px; flex: 1;}
+.imageservise {display: flex;
+  flex-direction: column;
+padding-right: 10px;}
+.imageslamps {
+background-image: url(Images/photo_2024-08-02_17-01-23.jpg);
+min-height: 500px;
+background-size: 1030px;
+margin-left: 50px;}
+
+.listvertical{display: flex;
+  flex-direction: row;
+padding: 30px;}
+  
+  
+  @media (min-width: 600px){ 
+    
+    .list{ padding: 45px;
+      grid-template-columns: repeat(2, 1fr);
+      flex: 1;
+     }
+  }
+  @media (min-width: 1000px){ 
+    
+    .list{ padding: 45px;
+      grid-template-columns: repeat(4, 1fr)}
+  }
+  @media (max-width: 600px){
+    .headerservises {
+    flex-direction: column;}
+  }
+@media(min-width: 600px){
+  .discoverp{font-size: 49px;} }
+  @media(min-width: 600px ;) {}
